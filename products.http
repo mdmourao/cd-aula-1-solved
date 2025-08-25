@@ -1,0 +1,29 @@
+### Create a new product
+POST http://localhost:8080/api/products
+Content-Type: application/json
+
+{
+  "name": "PS5",
+  "description": "Not a ps4",
+  "price": 1200.50,
+  "stock": 10
+}
+
+### Create another product
+POST http://localhost:8080/api/products
+Content-Type: application/json
+
+{
+  "name": "Iphone",
+  "description": "Not a samsung",
+  "price": 799.99,
+  "stock": 25
+}
+
+### Get all products
+GET http://localhost:8080/api/products
+Accept: application/json
+
+### Get product by Id
+GET http://localhost:8080/api/products/1
+Accept: application/json
